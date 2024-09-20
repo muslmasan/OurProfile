@@ -1,25 +1,20 @@
-import About from "./component/About";
-import Blog from "./component/Blog";
-import Footer from "./component/Footer";
-import Layout from "./component/Layout";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 import NavBar from "./component/NavBar";
-import Recent from "./component/Recent";
-import Services from "./component/Services";
-import Testimonial from "./component/Testimonial";
+import Footer from "./component/Footer";
 
 const App = () => {
   return (
     <div>
       <NavBar />
       <div className="container">
-        <Layout />
-        <About />
-        <Services />
-        <Recent />
-        <Blog />
-        <Testimonial />
-        <Footer />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
       </div>
+      <Footer />
     </div>
   );
 };

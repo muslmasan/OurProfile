@@ -2,16 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: system-ui;
+  font-family: 'Roboto', sans-serif;
 }
 :root {
-  --main-color : #9C27B0;
-  --basic-padding: 200px;
+  --main-color : #007AFF;
+  --basic-padding: 20px;
 }
 nav {
   position: fixed;
   top: 0;
   left: 0;
+  height: 80px;
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #7777;
@@ -19,14 +20,27 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 30px var(--basic-padding);
+  z-index: 10;
+}
+nav svg {
+  width: 20px;
+  cursor: pointer;
 }
 nav ul {
   list-style: none;
-  display: flex;
+  display: none;
   gap: 20px;
+  position: absolute;
+  background-color: #fff;
+  top: 80px;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  transition: 0.4s;
+  box-shadow: -2px 1px 5px 0px #7777;
 }
-nav ul li {
-  cursor: pointer;
+nav ul a {
+  text-decoration: none;
   color: #000;
   font-weight: bold;
   font-size: 20px;
@@ -40,8 +54,11 @@ nav ul li:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   img {
-    width: 500px;
+    width: 320px;
+    margin-top: 30px;
+    display: none;
   }
 }
 .layout h1 {
@@ -68,9 +85,6 @@ nav ul li:hover {
 
 
 
-
-
-
 .about {
   margin-top: 100px;
   padding: 0 var(--basic-padding);
@@ -80,7 +94,6 @@ nav ul li:hover {
   width: 100%;
 }
 .about h1{
-  width: 500px;
   margin: 0 auto;
   border-top: 3px solid var(--main-color);
   padding-top: 20px;
@@ -92,8 +105,11 @@ nav ul li:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
   .img {
     width: 270px;
+    margin-top: 30px;
   }
   .info {
     display: flex;
@@ -101,7 +117,7 @@ nav ul li:hover {
     justify-content: space-between;
     gap: 10px;
     .more {
-      width: 400px;
+      width: 300px;
       
     }
   }
@@ -164,6 +180,7 @@ text-align: center;
   display: flex;
   align-items: start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .recent h1 span{
   color: var(--main-color);
@@ -172,12 +189,13 @@ text-align: center;
   color: var(--main-color);
 }
 .recent .content > img {
-  width: 400px;
+  width: 300px;
+  margin-top: 30px;
 }
 .recent .content .info {
   text-align: left;
   p {
-    width: 400px;
+    width: fit-content;
     margin-top: 30px;
   }
 }
@@ -212,7 +230,7 @@ text-align: center;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 
 }
 .blog  button {
@@ -260,13 +278,15 @@ text-align: center;
   text-align: center;
 }
 .testimonial .content {
-  margin-top: 50px;
+  margin: 50px 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   > img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin-top: 30px;
   }
 }
 .testimonial .content .info {
@@ -275,18 +295,19 @@ text-align: center;
   align-items: start;
   p {
     margin-top: 20px;
-    width: 400px;
+    width: fit-content;
   }
 }
 
 .footer {
   background-color: #123;
-  margin-top: 50px;
 }
 .footer .content {
   padding: 50px var(--basic-padding);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+    gap: 30px;
   align-items: center;
   color: #fff;
 }
@@ -305,8 +326,53 @@ text-align: center;
   background-color: #222;
   color: #fff;
 }
-@media (max-width: 768px){
+@media (min-width: 770px){
   :root {
-    --main-color: #3F51B5;
+    --basic-padding: 50px;
+  }
+  nav svg {
+    width: 25px;
+}
+  .layout img {
+    display: block;
+  }
+  .testimonial .content .info p {
+        width: 350px;
+    }
+
+}
+@media (min-width: 992px){
+  :root {
+    --basic-padding: 80px;
+  }
+  nav svg {
+    width: 30px;
+}
+  .layout img {
+    width: 400px;
+  }
+  .testimonial .content .info p {
+    width: 400px;
+  }
+  .contactPage {
+    img {
+        width: 400px;
+    }
+  }
+  .contactPage .top {
+    flex-wrap: nowrap;
+    .info {
+      width: fit-content;
+  }
+}
+.contactPage .content {
+  .more {
+    justify-content: space-between;
+}
+}
+}
+@media (min-width: 1190px){
+  :root {
+    --basic-padding: 120px;
   }
 }

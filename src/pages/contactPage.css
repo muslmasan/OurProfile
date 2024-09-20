@@ -1,0 +1,106 @@
+:root {
+    --main-color : #007AFF;
+    --basic-padding: 20px;
+ }
+.contactPage {
+    margin-top: 100px;
+    img {
+        width: 300px;
+    }
+    p {
+        color: #777;
+    }
+}
+.contactPage .top {
+    padding: 0 var(--basic-padding);
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    .info {
+        width: 350px;
+        h1 {
+            color: var(--main-color);
+        }
+    }
+}
+.contactPage .content {
+    padding: 0 var(--basic-padding);
+    margin: 50px 0;
+    text-align: center;
+    h1 {
+        width: 300px;
+        border-top: 2px solid var(--main-color);
+        margin: 0 auto;
+        padding: 20px 0 ;
+    }
+    .more {
+        margin: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+.contactPage form {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contactPage form input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+}
+.contactPage form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+}
+.contactPage form button {
+    padding: 12px 15px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.contactPage .footer {
+    padding: 10px var(--basic-padding);
+    text-align: center;
+    color: #fff;
+    background: #222;
+    p {
+        margin: 10px;
+    }
+    .more {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px 0;
+        justify-content: center;
+    }
+}
+.contactPage .footer .more p {
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    svg {
+        width: 20px;
+    }
+}
