@@ -1,0 +1,115 @@
+
+:root {
+    --main-color : #007AFF;
+    --basic-padding: 20px;
+ }
+.About {
+    margin-top: 100px;
+}
+.About p {
+    color: #777;
+    margin: 10px 0;
+}
+.About .top {
+    padding: 0 var(--basic-padding);
+}
+.About .top {
+    padding: 0 var(--basic-padding);
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    .info {
+        width: 300px;
+        h1 span{
+            color: var(--main-color);
+        }
+    }
+    img {
+        width: 300px;
+    }
+}
+.About .middle {
+    padding: 0 var(--basic-padding);
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+    .info {
+        width: 300px;
+        h1 {
+            color: var(--main-color);
+        }
+    }
+    img {
+        width: 300px;
+    }
+}
+.About .boxs {
+    padding: 50px var(--basic-padding);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    background-color: #263b51;
+}
+.About .boxs .box {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    p {
+        color: #777;
+        margin: 10px 0;
+    }
+}
+.About .content {
+    text-align: center;
+    padding: 20px var(--basic-padding);
+}
+.About .content .title span {
+    color: var(--main-color);
+}
+.About .content > p {
+    color: #777;
+    margin: 10px 0;
+}
+.About .content .box {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+    .info {
+        text-align: left;
+        width: 300px;
+        h1 {
+            color: var(--main-color);
+        }
+    }
+    img {
+        width: 300px;
+    }
+}
+.About .footer {
+    padding: 40px var(--basic-padding);
+    background-color: #263b51;
+    text-align: center;
+    color: #fff;
+    p {
+        color: #777;
+        margin: 15px 0;
+    }
+    button {
+        padding: 12px 30px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: var(--main-color);
+        color: #fff;
+    }
+}

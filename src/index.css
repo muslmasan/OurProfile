@@ -339,6 +339,38 @@ text-align: center;
   .testimonial .content .info p {
         width: 350px;
     }
+    .About .top {
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 150px;
+      .info {
+        width: fit-content;
+      }
+      img {
+        width: 400px;
+      }
+    }
+    .About .middle {
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 150px;
+      .info {
+          width: fit-content;
+      }
+      img {
+        width: 400px;
+      }
+    }
+    .About .content .box {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 150px;
+      .info {
+        text-align: left;
+        width: fit-content;
+      }
+  }
 
 }
 @media (min-width: 992px){
