@@ -343,6 +343,8 @@ text-align: center;
       flex-wrap: nowrap;
       justify-content: center;
       gap: 150px;
+      flex-direction: row;
+
       .info {
         width: fit-content;
       }
@@ -353,6 +355,7 @@ text-align: center;
     .About .middle {
       flex-wrap: nowrap;
       justify-content: center;
+
       gap: 150px;
       .info {
           width: fit-content;
@@ -371,6 +374,9 @@ text-align: center;
         width: fit-content;
       }
   }
+  .About .content .box.reverse {
+    flex-direction: row;
+}
 
 }
 @media (min-width: 992px){

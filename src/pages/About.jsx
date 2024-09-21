@@ -70,7 +70,7 @@ const About = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum velit voluptatibus modi laboriosam non aut provident ut a quaerat architecto eveniet delectus sunt excepturi iure, similique deserunt nobis. Saepe, natus.</p>
             </div>
         </div>
-        <div className="box">
+        <div className="box reverse">
             <div className="info">
                 <h1>Creative Designer</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum velit voluptatibus modi laboriosam non aut provident ut a quaerat architecto eveniet delectus sunt excepturi iure, similique deserunt nobis. Saepe, natus.</p>

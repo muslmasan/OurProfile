@@ -12,23 +12,20 @@
 }
 .About .top {
     padding: 0 var(--basic-padding);
-}
-.About .top {
-    padding: 0 var(--basic-padding);
     margin: 50px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
     .info {
-        width: 300px;
+        width: 350px;
         h1 span{
             color: var(--main-color);
         }
     }
     img {
-        width: 300px;
+        width: 350px;
     }
 }
 .About .middle {
@@ -36,17 +33,17 @@
     margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
     gap: 30px;
     .info {
-        width: 300px;
+        width: 350px;
         h1 {
             color: var(--main-color);
         }
     }
     img {
-        width: 300px;
+        width: 350px;
     }
 }
 .About .boxs {
@@ -65,6 +62,7 @@
         margin: 10px 0;
     }
 }
+
 .About .content {
     text-align: center;
     padding: 20px var(--basic-padding);
@@ -80,7 +78,7 @@
     margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
     gap: 30px;
     .info {
@@ -93,6 +91,10 @@
     img {
         width: 300px;
     }
+}
+.About .content .box.reverse{
+    flex-direction: column-reverse;
+    align-items: center;
 }
 .About .footer {
     padding: 40px var(--basic-padding);
