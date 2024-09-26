@@ -1,0 +1,49 @@
+:root {
+    --main-color : #007AFF;
+    --basic-padding: 20px;
+}
+.projectPage .top{
+    padding: 40px var(--basic-padding);
+    margin-top: 80px;
+    background-color: #123;
+    color: #fff;
+}
+.projectPage .top h1 span {
+    color: var(--main-color);
+}
+.projectPage .top p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.projectPage img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        cursor: pointer;
+}
+
+.projectPage .content {
+    padding: 0 var(--basic-padding);
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.projectPage .show-next {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.projectPage .show-next span {
+    border-radius: 50%;
+    border: 1px solid #9E9E9E;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
