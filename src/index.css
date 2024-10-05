@@ -22,30 +22,39 @@ nav {
   padding: 30px var(--basic-padding);
   z-index: 10;
 }
+nav h1 {
+  cursor: pointer;
+}
 nav svg {
   width: 20px;
   cursor: pointer;
 }
 nav ul {
-  list-style: none;
-  display: none;
+  display: flex;
+  list-style: none; 
+  transition: 0.5s;
   gap: 20px;
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   top: 80px;
+  right: 0;
   flex-direction: column;
-  width: 100%;
+  width: 250px;
   padding: 20px;
-  transition: 0.4s;
   box-shadow: -2px 1px 5px 0px #7777;
+  bottom: 0;
 }
 nav ul a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  padding: 10px 20px;
   font-size: 20px;
+  border-radius: 6px;
+  transition: 0.3s;
 }
-nav ul li:hover {
+nav ul a:hover {
+  background-color: #eee;
   color: var(--main-color);
 }
 .layout {

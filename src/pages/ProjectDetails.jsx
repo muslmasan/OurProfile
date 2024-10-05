@@ -5,9 +5,7 @@ import "./ProjectDetails.css";
 
 const ProjectDetails = ({ projects }) => {
   const { id } = useParams();
-  console.log(id);
   const project = projects.find((project) => project.id === parseInt(id));
-  console.log(project);
 
   return (
     <div className="projectDetails">

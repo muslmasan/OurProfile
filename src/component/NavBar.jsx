@@ -1,17 +1,16 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [links, setLinks] = useState(false);
+  const navigate = useNavigate();
   const ShowLinks = () => {
-    console.log(links);
-
     links ? setLinks(false) : setLinks(true);
   };
   return (
     <nav>
-      <h1>InnoWare</h1>
-      <ul style={{ display: links ? "flex" : "none" }}>
+      <h1 onClick={()=> navigate('/')}>InnoWare</h1>
+      <ul style={{ right: links ? "0" : "-257px" }}>
         <Link to="/" onClick={() => setLinks(false)}>
           Home
         </Link>

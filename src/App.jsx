@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
+import BlogDetails from "./pages/BlogDetails";
 
 const App = () => {
   const projects = [
@@ -240,9 +241,35 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/about" element={<About />} />
-          <Route exact path="/blog" element={<Blog blogs={projects}/>} />
-          <Route exact path="/projects" element={<Projects projects={projects} />} />
-          <Route exact path="/projects/:id" element={<ProjectDetails projects={projects} />} />
+          <Route exact path="/blog" element={<Blog blogs={projects} />} />
+          <Route
+            exact
+            path="/blog/:id"
+            element={
+              <BlogDetails
+                blog={{
+                  id: 2,
+                  title: "Blog 2",
+                  content:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id libero vel felis tristique faucibus. Donec eget consectetur tortor. Nulla facilisi. Donec dui justo, condimentum id facilisis vel, tristique et neque.",
+                  date: "2022-02-01",
+                  img: "",
+                  views: 30,
+                  likes: 20,
+                }}
+              />
+            }
+          />
+          <Route
+            exact
+            path="/projects"
+            element={<Projects projects={projects} />}
+          />
+          <Route
+            exact
+            path="/projects/:id"
+            element={<ProjectDetails projects={projects} />}
+          />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </div>

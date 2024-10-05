@@ -2,8 +2,7 @@
     --main-color : #007AFF;
     --basic-padding: 20px;
 }
-.blogPage{
-}
+
 .blogPage .top{
     padding: 40px var(--basic-padding);
     margin-top: 80px;
@@ -25,6 +24,7 @@
     gap: 20px;
 }
 .blogPage .content .blog-content {
+    cursor: pointer;
     background-color: #eee;
     img {
         width: 100%;
@@ -68,4 +68,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.blog-details {
+    padding: 40px var(--basic-padding);
+    margin-top: 80px;
+}
+.blog-details h2 {
+
+    margin: 10px 0;
+}
+.blog-details p {
+    margin: 10px 0;
+    color: #777;
+}
+.blog-details .more {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    span {
+        font-weight: bold;
+    }
 }
